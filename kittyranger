@@ -1,0 +1,3 @@
+#!/bin/sh
+#simple script to start ranger in kitty, copy to /usr/bin to use
+kitty --hold sh -c "ranger"
