@@ -1,2 +1,5 @@
 require("naeme.remap")
 require("naeme.set")
+require("naeme.lualine")
+require("naeme.lsp")
+require("naeme.treesitter")

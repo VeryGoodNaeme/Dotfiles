@@ -5,9 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 #If running in a graphical session & a tmux session is not running, start tmux
-if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ] && [ -z "${TMUX}" ]; then
-    exec tmux new-session -A -s >/dev/null 2>&1
-fi
+#if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ] && [ -z "${TMUX}" ]; then
+#    exec tmux new-session -A -s >/dev/null 2>&1
+#fi
 
 #define colors
 txtcyn=$(tput setaf 14)
