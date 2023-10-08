@@ -7,6 +7,7 @@
     fg-col: #cdd6f4;
     fg-col2: #f38ba8;
     grey: #6c7086;
+    orange: #fab387;
 
     width: 80%;
     height: 50%;
@@ -21,7 +22,7 @@ element-text, element-icon , mode-switcher {
 window {
     height: 50%;
     border: 3px;
-    border-color: @border-col;
+    border-color: @orange;
     background-color: @bg-col;
 }
 
