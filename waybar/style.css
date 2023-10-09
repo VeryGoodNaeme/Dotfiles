@@ -6,7 +6,6 @@
 
 window#waybar {
     background-color: rgba(43, 48, 59, 0.0);
-    color: #ffffff;
 }
 
 window#waybar.hidden {
@@ -40,10 +39,6 @@ button {
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-button:hover {
-    background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
-}
 
 #workspaces button {
     padding: 0 5px;
@@ -54,22 +49,24 @@ button:hover {
     color: #cdd6f4;
 }
 
-#workspaces button:hover {
-    background: rgba(0, 0, 0, 0.0);
-}
-
 #workspaces button.focused {
+    border:2px;
+    border-color: #585b70;
     background-color: #fab387;
     color: #1e1e2e;
 }
 
 #workspaces button.urgent {
     background-color: #f38ba8;
+    color: #1e1e2e;
 }
 
 #mode {
-    background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
+    background-color: #1e1e2e;
+    border-radius: 5px;
+    margin-top:3px;
+    margin-right:5px;
+    margin-left:5px;
 }
 
 #clock,
@@ -121,7 +118,8 @@ window#waybar.empty #window {
 
 
 #clock {
-    background-color: #74c7ec;
+    background-color: #1e1e2e;
+    color: #74c7ec;
     margin-left:5px;
     margin-right:5px;
     border-radius: 5px;
@@ -160,8 +158,8 @@ label:focus {
 }
 
 #cpu {
-    background-color: #a6e3a1;
-    color: #1e1e2e;
+    background-color: #1e1e2e;
+    color: #a6e3a1;
     border-radius: 5px;
     margin-top:3px;
     margin-left:5px;
@@ -169,8 +167,8 @@ label:focus {
 }
 
 #memory {
-    background-color: #cba6f7;
-    color: #1e1e2e;
+    background-color: #1e1e2e;
+    color: #cba6f7;
     margin-left: 5px;
     margin-right: 5px;
     margin-top:3px;
@@ -194,8 +192,8 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f9e2af;
-    color: #1e1e2e;
+    background-color: #1e1e2e;
+    color: #f9e2af;
     border-radius:5px;
     margin-top:3px;
     margin-left:5px;
@@ -243,7 +241,11 @@ label:focus {
 }
 
 #tray {
-    background-color: #74c7ec;
+    background-color: #1e1e2e;
+    margin-top: 3px;
+    border-radius:5px;
+    margin-right:5px;
+    margin-left:5px;
 }
 
 #tray > .passive {
@@ -306,8 +308,8 @@ label:focus {
 }
 
 #scratchpad {
-    background: #eba0ac;
-    color: #1e1e2e;
+    background: #1e1e2e;
+    color: #eba0ac;
     border-radius:5px;
     margin-top:3px;
     margin-right:5px;

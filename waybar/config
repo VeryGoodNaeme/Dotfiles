@@ -1,8 +1,8 @@
 {
     "layer": "top",
-    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-left": ["sway/workspaces"],
     "modules-center": ["sway/window"],
-    "modules-right": ["tray", "sway/scratchpad", "pulseaudio", "cpu", "memory", "battery", "clock"],
+    "modules-right": ["sway/mode", "sway/scratchpad", "pulseaudio", "cpu", "memory", "battery", "tray","clock"],
     "sway/window": {
         "max-length": 50
     },

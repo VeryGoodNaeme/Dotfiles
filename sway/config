@@ -39,10 +39,10 @@ output * bg ~/.config/background fill
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-#          before-sleep 'swaylock -f -c 000000'
+exec swayidle -w \
+          timeout 300 'swaylock -f -c 000000' \
+          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+          before-sleep 'swaylock -f -c 000000'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -68,6 +68,8 @@ output * bg ~/.config/background fill
 
     # Start your launcher
     bindsym $mod+d exec $menu
+
+    bindsym $mod+p exec grim -g "$(slurp)"
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -160,7 +162,7 @@ output * bg ~/.config/background fill
 #
 # Resizing containers:
 #
-mode "resize" {
+mode "Resize" {
     # left will shrink the containers width
     # right will grow the containers width
     # up will shrink the containers height
@@ -175,7 +177,17 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+r mode "resize"
+mode "Power" {
+	bindsym p exec poweroff
+	bindsym r exec reboot
+	bindsym e exec swaymsg exit
+
+    # Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+e mode "Power"
+bindsym $mod+r mode "Resize"
 
 #
 # Status Bar:
@@ -204,3 +216,4 @@ gaps outer 10px
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3"
 exec --no-startup-id gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
+
