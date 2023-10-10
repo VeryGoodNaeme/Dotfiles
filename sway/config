@@ -40,9 +40,9 @@ output * bg ~/.config/background fill
 # Example configuration:
 #
 exec swayidle -w \
-          timeout 300 'swaylock -f -c 000000' \
+          timeout 300 'swaylock -f -i ~/.config/background' \
           timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-          before-sleep 'swaylock -f -c 000000'
+          before-sleep 'swaylock -f -i ~/.config/background'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -181,6 +181,7 @@ mode "Power" {
 	bindsym p exec poweroff
 	bindsym r exec reboot
 	bindsym e exec swaymsg exit
+	bindsym l exec swaylock -i ~/.config/background
 
     # Return to default mode
     bindsym Return mode "default"

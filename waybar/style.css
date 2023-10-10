@@ -61,13 +61,6 @@ button {
     color: #1e1e2e;
 }
 
-#mode {
-    background-color: #1e1e2e;
-    border-radius: 5px;
-    margin-top:3px;
-    margin-right:5px;
-    margin-left:5px;
-}
 
 #clock,
 #battery,
@@ -183,6 +176,14 @@ label:focus {
     background-color: #90b1b1;
 }
 
+#mode {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    border-radius: 5px;
+    margin-top:3px;
+    margin-right:5px;
+    margin-left:5px;
+}
 #network {
     background-color: #2980b9;
 }
@@ -233,11 +234,17 @@ label:focus {
 }
 
 #temperature {
-    background-color: #f0932b;
+    background-color: #1e1e2e;
+    margin-top: 3px;
+    margin-right: 5px;
+    margin-left:5px;
+    border-radius:5px;
+    color: #f2cdcd;
 }
 
 #temperature.critical {
-    background-color: #eb4d4b;
+    background-color: #f38ba8;
+    color: #1e1e2e;
 }
 
 #tray {
