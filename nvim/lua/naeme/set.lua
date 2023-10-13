@@ -11,4 +11,7 @@ vim.opt.cursorline = true
 
 vim.opt.scrolloff = 8
 
-vim.cmd[[colorscheme catppuccin-mocha]]
+vim.cmd[[colorscheme catppuccin-mocha
+set shortmess+=I
+]]
+
