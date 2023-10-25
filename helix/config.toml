@@ -1,0 +1,41 @@
+theme = "tokyonight_storm"
+
+
+[editor]
+line-number = "relative"
+mouse = false
+auto-pairs = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-modification-indicator", "version-control"]
+center = ["file-name"]
+right = ["diagnostics", "workspace-diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+enable = true
+display-messages = true
+
+
+[editor.file-picker]
+max-depth = 3
+
+[editor.indent-guides]
+render = true
+character = "╎"
+skip-levels = 1
+
+[editor.gutters]
+layout = ["diff", "diagnostics", "line-numbers", "spacer"]
+
+[keys.normal]
+a = ["move_char_right", "insert_mode"]
+g = { a = "code_action" }
