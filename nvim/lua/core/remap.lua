@@ -13,3 +13,7 @@ vim.keymap.set("n","<leader>x", vim.cmd.bd)
 vim.keymap.set("n", "gl", "$")
 vim.keymap.set("n", "gh", "_")
 vim.keymap.set("n", "ge", "G")
+
+--move highlighted text
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
