@@ -1,1 +1,1 @@
-require("naeme")
+require("core")
