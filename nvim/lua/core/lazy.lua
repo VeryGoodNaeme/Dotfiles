@@ -35,4 +35,5 @@ require("lazy").setup({
 	"nvim-treesitter/nvim-treesitter",
 	"nvim-tree/nvim-tree.lua",
 	"lewis6991/gitsigns.nvim",
+    "theprimeagen/harpoon",
 })
